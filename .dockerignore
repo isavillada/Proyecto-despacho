@@ -1,0 +1,16 @@
+.git
+*.bundle
+.venv
+**/__pycache__
+**/.pytest_cache
+**/node_modules
+**/target
+**/dist
+*.db
+uploads
+demo_uploads
+evidencia
+docs
+deploy
+.env*
+frontend/preview

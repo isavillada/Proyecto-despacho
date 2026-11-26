@@ -1,0 +1,3 @@
+# Evidencias de verificación
+
+Las capturas 01 a 08 corresponden a Chromium renderizando la interfaz React compartida, en el modo de compatibilidad FastAPI/SQLite y con datos de prueba ficticios. La prueba `tests/ui_smoke.py` usa un puente local de llamadas a la API (TestClient), porque la política del navegador del entorno impidió la navegación HTTP directa. No son capturas de Spring Boot, producción, staging institucional ni datos reales. Los TXT contienen los resultados ejecutados de Pytest, la prueba de interfaz, el análisis sintáctico Java y la prueba aislada de calendario. El stack React 18/Vite + Spring Boot + PostgreSQL está incluido como código candidato, pendiente compilación y pruebas integrales.

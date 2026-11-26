@@ -1,0 +1,12 @@
+# Install Caddy on the hosting server and define PROD_DOMAIN and STAGING_DOMAIN
+# as real DNS hostnames pointing to that server. Do not expose app ports publicly.
+{$PROD_DOMAIN} {
+    reverse_proxy 127.0.0.1:8080
+    header Strict-Transport-Security "max-age=31536000"
+    encode gzip
+}
+{$STAGING_DOMAIN} {
+    reverse_proxy 127.0.0.1:8081
+    header Strict-Transport-Security "max-age=31536000"
+    encode gzip
+}
